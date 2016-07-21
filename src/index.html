@@ -11,14 +11,15 @@
 
 
 
-  <body>
+  <body onload="msnry()">
     <div id='app'>
 
     </div>
     <script src="script.min.js"></script>
     <script src="js/masonry-docs.min.js"></script>
     <script>
-    var elem = document.querySelector('.grid');
+      function msnry() {
+            var elem = document.querySelector('.grid');
 var msnry = new Masonry( elem, {
   // options
   itemSelector: '.grid-item',
@@ -29,7 +30,9 @@ var msnry = new Masonry( elem, {
 //   for an individual element
 var msnry = new Masonry( '.grid', {
   // options
-});</script>
+});
+      }
+</script>
   </body>
 
 
