@@ -1,5 +1,9 @@
-.grid-item {width: 400px;}
+.grid-item {
+  position: relative;
+  width: 400px;
+}
 .single_rec{
+  float: left;
   position: relative;
   overflow: hidden;
   font-size: 12px;
