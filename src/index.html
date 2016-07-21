@@ -12,13 +12,24 @@
 
 
   <body>
-    <h1>Recipes-bank and others</h1>
-    <div class='container'>
-      <div id='app'>
+    <div id='app'>
 
-      </div>
     </div>
     <script src="script.min.js"></script>
+    <script src="js/masonry-docs.min.js"></script>
+    <script>
+    var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+
+// element argument can be a selector string
+//   for an individual element
+var msnry = new Masonry( '.grid', {
+  // options
+});</script>
   </body>
 
 

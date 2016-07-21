@@ -1,8 +1,10 @@
 var React = require('react');
+require('./singleRec.scss');
+
 
 module.exports = React.createClass({
   render: function(){
-    return <div className='single_rec col-sm-4'>
+    return <div className='single_rec grid-item'>
       <img src={this.props.imgURL} />
       <div className='title'>
         <h2>{this.props.title}</h2>
